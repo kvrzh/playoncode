@@ -1,0 +1,543 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+}
+
+header nav {
+    text-align: center;
+    float: left;
+    height: 50px;
+    /* margin-left: 5%; */
+    line-height: 50px;
+    /* color: #fff; */
+    width: 20%;
+
+}
+
+header {
+    background: #e67e22;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    /* margin-bottom: 70px; */
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    margin: 0 5%;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    float: left;
+}
+
+nav a {
+    padding: 0 5%;
+    float: left;
+    transition: 0.5s;
+    margin: 0;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    background: #d35400;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.content {
+    padding-top: 50px;
+    background: #fdfdfd;
+}
+
+div.social {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 5%;
+    height: inherit;
+}
+
+.social i {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.social i:hover {
+
+}
+
+div.logo {
+    display: inline-block;
+    margin-left: 5%;
+    height: inherit;
+    float: left;
+    width: 15%;
+
+}
+
+.logo h1 {
+    color: #fff;
+    font-weight: 100;
+    margin: 0;
+    font-size: 36px;
+    /* margin-left: 0%; */
+    /* padding-top: 10px; */
+    float: left;
+    line-height: 50px;
+}
+
+.logo img {
+    height: 40px;
+    float: left;
+    /* vertical-align: middle; */
+    margin: 5px 0;
+    margin-right: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+div.login-main {
+    display: inline-block;
+    /* width: 30%; */
+    width: 25%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    float: right;
+}
+
+.login-main a {
+    height: 50px;
+    display: inline-block;
+    margin: 0;
+    float: right;
+    text-transform: uppercase;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.login-main a:hover {
+    transition: 0.5s;
+    background: #d35400;
+}
+
+.login-main span {
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main-page {
+    background: url("../img/genji1.jpg");
+    width: 100%;
+    background-size: cover;
+    height: 600px;
+    background-attachment: fixed;
+    position: relative;
+
+    padding-top: 0;
+}
+
+.main-page blockquote {
+    text-align: right;
+    color: #fff;
+    font-size: 24px;
+    line-height: 100px;
+    margin: 0;
+    margin-right: 15%;
+
+}
+
+.main-page iframe {
+
+}
+
+.main-hero {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    top: calc(100% - 100px);
+    height: 100px;
+}
+
+.main-page p {
+    color: #fff;
+    text-align: right;
+    display: block;
+    width: 60%;
+    margin: 0;
+    float: right;
+    font-size: 60px;
+    margin-right: 15%;
+}
+
+.main-page a {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #e67e22;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    display: block;
+    /* margin: 0 auto; */
+    width: 200px;
+    margin-top: 60px;
+    margin-right: 15%;
+    float: right;
+}
+
+div.search {
+    display: inline-block;
+    height: inherit;
+    float: left;
+    line-height: 50px;
+    width: 30%;
+}
+
+.search input[type="submit"] {
+    left: -2.5em;
+    position: relative;
+    vertical-align: middle;
+    width: 2.2em;
+    padding: 0;
+    border-radius: 0 5px 5px 0;
+    background: url("../img/search1.png");
+    border-left: 1px solid #fff;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.search input {
+    border: 0;
+    height: 30px;
+    width: 80%;
+    padding-right: 2.5em;
+    padding-left: 10px;
+    outline: none;
+}
+
+.search input[type="search"] {
+
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.search input[type="search"]::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.search input[type="search"]::-moz-placeholder {
+    color: #fff;
+}
+
+.popup {
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+.popup-cont {
+    position: fixed;
+    width: 50%;
+    background: #fff;
+    top: 20px;
+    left: 25%;
+    z-index: 3000;
+    display: none;
+    background: url("../img/bg-popup.jpg");
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.popup-cont h1 {
+    color: #000;
+    text-align: center;
+    font-size: 34px;
+    margin: 34px auto;
+    width: 70%;
+}
+
+.popup-cont h1 span {
+    color: #e67e22;
+}
+
+i#popup-close {
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.popup-cont a {
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 5px 25px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.popup-button {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.firstsect h2 {
+    margin-left: 5%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #e67e22;
+}
+
+.firstsect p {
+    text-align: justify;
+    width: 70%;
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.firstsect i {
+    float: right;
+    font-size: 80px;
+    width: 25%;
+    text-align: center;
+    color: #e67e22;
+    position: static;
+}
+
+.secondsect h2 {
+    text-align: right;
+    margin-right: 5%;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #e67e22;
+}
+
+.secondsect p {
+    margin-left: 25%;
+    text-align: justify;
+    width: 70%;
+}
+
+.secondsect i {
+    float: left;
+    font-size: 80px;
+    width: 25%;
+    text-align: center;
+    color: #e67e22;
+}
+
+.rules h1 {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.popup-cont span {
+    display: block;
+    text-align: center;
+}
+
+.popup-cont b {
+    text-transform: uppercase;
+    color: #e67e22;
+}
+
+.firstsect b {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.secondsect b {
+    display: block;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.rules section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rules h3 {
+    font-size: 16px;
+}
+
+.registration {
+    background: url("../img/bg-reg.png") no-repeat #ecf0f1;
+    min-height: calc(100vh - 50px);
+
+}
+
+.registration h1 {
+    color: black;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.registration form {
+    width: 30%;
+    background: #fff;
+    padding: 25px 0;
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 25px;
+}
+
+.registration form h3 {
+    margin: 0;
+    padding: 25px 0;
+    text-align: center;
+    color: #d35400;
+    font-weight: 400;
+}
+
+.registration form input {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 75%;
+    outline: none;
+    border: 1px solid;
+    transition: 0.5s;
+}
+
+.registration form input:focus {
+    border: 1px solid #e67e22;
+}
+
+.registration form label {
+    width: calc(75% + 20px);
+    display: block;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.registration form input[type=submit] {
+    background: 0;
+    border: 1px solid;
+    width: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: #f39c12;
+    text-transform: uppercase;
+}
+
+.registration form input[type=submit]:hover {
+    color: #d35400;
+    transition: 0.5s;
+}
+
+.reg-image {
+    float: left;
+    display: inline-block;
+    width: 60%;
+    height: 600px;
+}
+
+.fix {
+    clear: both;
+    padding-bottom: 25px;
+}
+
+.reg-image img {
+    height: 735px;
+}
+
+.reg-image h2 {
+    font-size: 36px;
+    /* color: #d35400; */
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.reg-image a {
+    text-decoration: none;
+    color: #fff;
+    background: #e67e22;
+    padding: 10px 40px;
+    text-transform: uppercase;
+}
+
+.reg-image > div {
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+    text-align: center;
+    color: #100303;
+    padding: 50px 0;
+    margin-top: calc(50% - 137px);
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.reg-image p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.reg-image b {
+    color: #e67e22;
+    text-transform: uppercase;
+}
+
+.message {
+    top: 120px;
+    padding: 5px 20px;
+    left: calc(25% - 20px);
+    background: #fff;
+}
+
+.message a {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+}
+
+.message span {
+    margin-top: 10px;
+}
+
+.message i {
+    position: absolute;
+    top: calc(50% - 28px);
+    font-size: 36px;
+    margin-left: 5px;
+    background: #e74c3c;
+    padding: 10px 20px;
+    color: #fff;
+}
