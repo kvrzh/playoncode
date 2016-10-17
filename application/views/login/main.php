@@ -37,5 +37,5 @@
 </span>
         <a href="">Продолжить</a>
     </div>
-<? endif; ?>
+<?php endif; ?>
 

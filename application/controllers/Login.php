@@ -6,7 +6,7 @@
  * Date: 01.10.2016
  * Time: 10:16
  */
-class login extends MY_Controller
+class Login extends MY_Controller
 {
     function __construct()
     {
@@ -39,6 +39,7 @@ class login extends MY_Controller
             'login' => $this->input->post('login'),
             'password' => encode_pass($this->input->post('password'))
         );
+
         $user = $this->User_model->login($data);
         if ($user) {
             $this->session->set_userdata($user);
