@@ -19,8 +19,8 @@ class MY_Controller extends CI_Controller
 
         }
         $variables['log_in'] = $this->session->log_in;
+        $this->load->view('default/assets');
         $this->load->view('default/header', $variables);
         $this->load->view($page, $data);
-
     }
 }
