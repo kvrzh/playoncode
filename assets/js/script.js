@@ -32,6 +32,7 @@ $(document).ready(function () {
             }, 500);
         } else {
             $('.single_tournament').remove();
+
             setTimeout(function () {
                 loadTournament();
             }, 500);

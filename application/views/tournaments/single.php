@@ -1,6 +1,14 @@
 <script>
     $('div.tournament_info i').click(function (event) {
-        $('.tournaments section').removeClass('col-lg-6').addClass('col-lg-12');
+        $(this).parent().animate({
+            'opacity':'0'
+        },300,function () {
+            $(this).parent().remove();
+        });
+
+        setTimeout(function(){$('section.tournaments_list').removeClass('col-lg-6').addClass('col-lg-12')},500);
+
+
     });
 </script>
 <div class="tournament_info">

@@ -227,6 +227,7 @@ div.search {
     border-left: 1px solid #fff;
     cursor: pointer;
     background-size: cover;
+    top: -1px;
 }
 
 .search input {
@@ -237,10 +238,11 @@ div.search {
     padding-left: 10px;
     outline: none;
     line-height: normal;
+
 }
 
 .search input[type="search"] {
-
+    border-radius: 5px;
     background: none;
     border: 1px solid #fff;
     color: #fff;
@@ -589,8 +591,11 @@ div.tournament_info {
     right: 5%;
     font-size: 30px;
     top: calc(50% - 15px);
+    cursor: pointer;
 }
 
 i.transform {
+    transition: 0.2s;
+
     transform: rotate(180deg);
 }

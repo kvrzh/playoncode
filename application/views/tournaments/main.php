@@ -1,6 +1,6 @@
 <div class="tournaments">
     <h1>Турниры</h1>
-    <section class="col-lg-12">
+    <section class="col-lg-12 tournaments_list">
         <table class="table">
             <tbody>
             <tr>
