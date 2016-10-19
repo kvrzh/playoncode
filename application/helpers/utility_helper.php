@@ -33,3 +33,12 @@ function encode_pass($string)
     } else
         return false;
 }
+function decode_status($status){
+    if($status == 0){
+        return "Регистрация";
+    }elseif($status == 1) {
+        return "Проходит";
+    }else{
+        return "Завершен";
+    }
+}

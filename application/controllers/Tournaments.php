@@ -8,13 +8,24 @@
  */
 class Tournaments extends MY_Controller
 {
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model(array('Tournaments_model'));
+    }
+
     function index()
     {
-        $this->_view('tournaments/main');
+        $data['tournaments'] = $this->Tournaments_model->getAllTournaments();
+        $this->_view('tournaments/main',$data);
     }
 
     function single()
     {
-        $this->load->view('tournaments/single');
+        $this->Tournaments_model->getTournament($_POST['limit']);
+        $data['test'] = 'wqeewqewewqewqeweqweqwwqwdqdwdwqdw';
+        $data['limit'] = $_POST['limit'];
+
+        $this->load->view('tournaments/single',$data);
     }
 }

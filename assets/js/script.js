@@ -24,31 +24,30 @@ $(document).ready(function () {
     $('.secondsect i').css('line-height', j + 'px');
 
     $('.tournaments table button').click(function (event) {
+        var elem = $(this).closest('tr');
+        var id = $(elem).find('td.id').text();
         event.preventDefault();
         if ($('.single_tournament').length <= 0) {
             $('.tournaments section').removeClass('col-lg-12').addClass('col-lg-6');
             setTimeout(function () {
-                loadTournament();
+                loadTournament(id);
             }, 500);
         } else {
             $('.single_tournament').remove();
-
             setTimeout(function () {
-                loadTournament();
+                loadTournament(id);
             }, 500);
         }
     });
-
-
 });
 
 
-function loadTournament() {
+function loadTournament(id) {
     $('.tournaments').append('<section class="single_tournament col-lg-6"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></section>');
-    $('section.single_tournament').load('tournaments/single', function () {
+    $('section.single_tournament').load('tournaments/single',{limit: id} , function () {
         $('div.tournament_info').animate({
             'opacity': '1'
-        }, 'slow');
+        }, 500);
     });
 
 }
