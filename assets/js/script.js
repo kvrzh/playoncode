@@ -44,7 +44,7 @@ $(document).ready(function () {
 
 function loadTournament(id) {
     $('.tournaments').append('<section class="single_tournament col-lg-6"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i></section>');
-    $('section.single_tournament').load('tournaments/single',{limit: id} , function () {
+    $('section.single_tournament').load('tournaments/single', {id: id}, function () {
         $('div.tournament_info').animate({
             'opacity': '1'
         }, 500);

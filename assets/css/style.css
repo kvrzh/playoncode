@@ -539,7 +539,7 @@ i#popup-close {
     margin-top: 10px;
 }
 
-.message i {
+.message i.fa-exclamation {
     position: absolute;
     top: calc(50% - 28px);
     font-size: 36px;
@@ -554,11 +554,20 @@ i#popup-close {
     transition: 0.5s;
 }
 
+.tournaments section > table {
+    border-right: 1px solid #ddd;
+}
+
 .tournaments section > table > tbody > tr > td {
     text-align: center;
     vertical-align: middle;
 }
 
+.tournaments section > table > thead > tr > th {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+}
 .tournaments section td > i {
     font-size: 22px;
     color: #d35400;
@@ -586,7 +595,14 @@ div.tournament_info {
     opacity: 0;
 }
 
-.tournament_info i {
+.tournament_info h3 {
+    text-transform: uppercase;
+    color: #000;
+    /* font-weight: 300; */
+    margin: 20px 0;
+}
+
+.tournament_info i.fa-arrow-right {
     position: absolute;
     right: 5%;
     font-size: 30px;
@@ -594,8 +610,15 @@ div.tournament_info {
     cursor: pointer;
 }
 
+.tournament_info span {
+    font-weight: 300;
+    display: block;
+}
 i.transform {
     transition: 0.2s;
-
     transform: rotate(180deg);
+}
+
+.tournament_info span i {
+    color: #D35400;
 }

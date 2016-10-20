@@ -42,3 +42,13 @@ function decode_status($status){
         return "Завершен";
     }
 }
+
+function decode_type($type)
+{
+    if ($type == 5) {
+        return '<i class="fa fa-users" aria-hidden="true"></i> Командный';
+    } elseif ($type == 1) {
+        return '<i class="fa fa-user" aria-hidden="true"></i> Одиночный';
+    }
+    return $type;
+}

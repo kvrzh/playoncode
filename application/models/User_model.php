@@ -13,6 +13,16 @@ class User_model extends CI_Model
         parent::__construct();
     }
 
+    public function getUserByLogin($login)
+    {
+        $this->db->select('*');
+        $this->db->where('login', $login);
+        $query = $this->db->get('users');
+        if ($query->row('id')) {
+            $user = $query->row();
+        }
+        return $user;
+    }
     public function registration($data)
     {
         if ($data['password'] != $data['repeat_password']) {
